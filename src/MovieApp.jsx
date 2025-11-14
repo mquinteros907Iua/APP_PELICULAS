@@ -7,7 +7,7 @@ export const MovieApp = () => {
   const [loading, setLoading] = useState(false)
   const [searched, setSearched] = useState(false)
 
-  const API_KEY = '353c3d57ac11a6fbfd31158e51daa6f1'
+  const API_KEY = 'API obtenida'
   const API_URL = 'https://api.themoviedb.org/3/search/movie'
   const IMG_URL = 'https://image.tmdb.org/t/p/w500'
 
