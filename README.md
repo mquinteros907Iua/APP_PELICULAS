@@ -1,16 +1,77 @@
-# React + Vite
+# App de Películas — React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+¡Bienvenido! Esta es una aplicación de búsqueda de películas interactiva y responsiva creada con React y Vite.
 
-Currently, two official plugins are available:
+**Hecho por Marcos** — una pequeña app para buscar y explorar información sobre películas usando la API de TMDB.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Características principales
 
-## React Compiler
+- 🔍 Búsqueda de películas por nombre
+- 🎬 Información detallada: título, año, calificación y sinopsis
+- 🖼️ Pósters de alta calidad de cada película
+- 📱 Diseño completamente responsive y adaptable
+- ⚡ Interfaz rápida y moderna con animaciones suaves
+- 🌙 Soporte para modo claro y oscuro
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## Tecnologías
 
-## Expanding the ESLint configuration
+- **React** (con Vite)
+- **HTML, CSS**
+- **API de TMDB** (The Movie Database)
+- **JavaScript ES6+**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Cómo ejecutar
+
+### Instala dependencias
+```bash
+npm install
+```
+
+### Ejecuta en modo desarrollo (Vite)
+```bash
+npm run dev
+```
+
+### Para producción
+```bash
+npm run build
+npm run preview
+```
+
+## Configuración de la API
+
+Esta aplicación utiliza la API de **The Movie Database (TMDB)** para obtener información de películas.
+
+La API key ya está integrada en el código. Si deseas usar tu propia clave:
+
+1. Regístrate en [TMDB](https://www.themoviedb.org/)
+2. Obtén tu API key
+3. Reemplázala en `src/MovieApp.jsx`:
+```javascript
+const API_KEY = 'tu_api_key_aqui'
+```
+
+## Estructura del proyecto
+
+```
+APP_DE_PELICULAS/
+├── src/
+│   ├── MovieApp.jsx      # Componente principal
+│   ├── MovieApp.css      # Estilos de la aplicación
+│   ├── main.jsx          # Punto de entrada
+│   └── index.css         # Estilos globales
+├── index.html            # HTML base
+├── package.json
+└── vite.config.js
+```
+
+## Notas
+
+- **Diseño responsive**: La aplicación se adapta perfectamente a móviles, tablets y escritorio
+- **Grid dinámico**: Las tarjetas de películas se organizan automáticamente según el tamaño de pantalla
+- **Estilos personalizados** en `src/MovieApp.css`
+- **Búsquedas en español**: La API está configurada para devolver resultados en español (es-ES)
+
+---
+
+**Desarrollado por Marcos** | Proyecto educativo - Digital House
