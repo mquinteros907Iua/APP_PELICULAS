@@ -4,6 +4,8 @@
 
 **Hecho por Marcos** — una pequeña app para buscar y explorar información sobre películas usando la API de TMDB.
 
+**Demo** - https://aplicacion-peliculas-react-digital-ho.netlify.app/
+
 ## Características principales
 
 - 🔍 Búsqueda de películas por nombre
